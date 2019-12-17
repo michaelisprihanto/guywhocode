@@ -1,0 +1,39 @@
+$font-family: 'Lato', sans-serif;
+$body-color: #111111;
+$footer-color-light: #fdfdfd;
+$footer-color-dark: #313131;
+$nav-link-color: #dddddd;
+
+* {
+  color: $body-color;
+  font-family: $font-family;
+}
+
+.navbar {
+  height: 7em;
+}
+
+.footer-copyright {
+  color: $footer-color-dark;
+}
+
+.navbar-brand {
+  margin-right: 3rem;
+}
+
+.nav-link-gwc {
+  color: $nav-link-color;
+  padding-right: 0;
+  padding-left: 0;
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+.nav-link-gwc:hover, .nav-link-gwc:focus {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav-link-gwc-active {
+  color: #ffffff; 
+}
