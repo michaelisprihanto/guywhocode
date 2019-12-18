@@ -1,12 +1,17 @@
-$font-family: 'Lato', sans-serif;
+$font-family-lato: 'Lato', sans-serif;
+$font-family-archivo: 'Archivo Black', sans-serif;
+$font-family-josefin: 'Josefin Sans', sans-serif;
+$font-family-lobster: 'Lobster', cursive;
 $body-color: #111111;
 $footer-color-light: #fdfdfd;
 $footer-color-dark: #313131;
-$nav-link-color: #dddddd;
+$nav-link-color-light: #777777;
+$nav-link-color-dark: #dddddd;
+$color-watermelon: #fa6e59;
 
 * {
   color: $body-color;
-  font-family: $font-family;
+  font-family: $font-family-josefin;
 }
 
 .navbar {
@@ -22,7 +27,7 @@ $nav-link-color: #dddddd;
 }
 
 .nav-link-gwc {
-  color: $nav-link-color;
+  color: $nav-link-color-light;
   padding-right: 0;
   padding-left: 0;
   display: block;
@@ -31,9 +36,22 @@ $nav-link-color: #dddddd;
 
 .nav-link-gwc:hover, .nav-link-gwc:focus {
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
 }
 
 .nav-link-gwc-active {
-  color: #ffffff; 
+  color: #060606; 
 }
+
+.custom-font {
+  font-family: $font-family-archivo;
+  font-weight: lighter;
+  color: #f9f9f9;       
+}
+
+.jumbotron {
+  background: #ff4b1f;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ff9068, #ff4b1f);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ff9068, #ff4b1f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+

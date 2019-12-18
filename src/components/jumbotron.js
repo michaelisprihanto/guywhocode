@@ -5,8 +5,8 @@ const Jumbotron = (props) => {
     <Fragment>
       <div className="jumbotron jumbotron-fluid">
         <div className="container">
-          <h1 className="display-4">{props.jumbotronTitle}</h1>
-          <p className="lead">{props.jumbotronContent}</p>
+          <h1 className="display-4 custom-font">{props.jumbotronTitle}</h1>
+          <p className="lead" style={{color: '#f9f9f9'}}>{props.jumbotronContent}</p>
         </div>
       </div>
     </Fragment>
