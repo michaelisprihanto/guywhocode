@@ -1,13 +1,23 @@
 import React, { Fragment } from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql, useStaticQuery } from 'gatsby'
 
 const Header = () => {
+  const data = useStaticQuery(graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+  `)
+  
   return (
     <Fragment>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
           <div className="col-sm-8">
-            <Link to="/" className="navbar-brand">GuyWhoCode</Link>
+            <Link to="/" className="navbar-brand">{data.site.siteMetadata.title}</Link>
           </div>
           <div className="col-sm-3">
             <div className="collapse navbar-collapse" id="navbarToggler">
