@@ -16,7 +16,7 @@ query (
   ) {
     frontmatter {
       title
-      date
+      date(formatString: "MMMM Do, YYYY")
     }
     html
   }

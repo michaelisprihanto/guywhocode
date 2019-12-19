@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo|Archivo+Black|Josefin+Sans&display=swap');
+
 $font-family-lato: 'Lato', sans-serif;
-$font-family-archivo: 'Archivo Black', sans-serif;
+$font-family-archivo-black: 'Archivo Black', sans-serif;
+$font-family-archivo: 'Archivo', sans-serif;
 $font-family-josefin: 'Josefin Sans', sans-serif;
 $font-family-lobster: 'Lobster', cursive;
 $body-color: #111111;
 $footer-color-light: #fdfdfd;
 $footer-color-dark: #313131;
+$card-color-hover: #ededed;
 $nav-link-color-light: #777777;
 $nav-link-color-dark: #dddddd;
 $color-watermelon: #fa6e59;
@@ -12,6 +16,11 @@ $color-watermelon: #fa6e59;
 * {
   color: $body-color;
   font-family: $font-family-josefin;
+}
+
+body {
+  position: relative;
+  padding-bottom: 15em;
 }
 
 .navbar {
@@ -44,14 +53,27 @@ $color-watermelon: #fa6e59;
 }
 
 .custom-font {
-  font-family: $font-family-archivo;
+  font-family: $font-family-archivo-black;
   font-weight: lighter;
   color: #f9f9f9;       
 }
 
 .jumbotron {
-  background: #ff4b1f;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #ff9068, #ff4b1f);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #ff9068, #ff4b1f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #396afc;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.card-gwc:hover {
+  background-color: $card-color-hover;
+}
+
+.footer-sticky {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}

@@ -11,7 +11,8 @@ const BlogPage = () => {
         node {
           frontmatter {
             title
-            date
+            summary
+            date(formatString: "MMMM Do, YYYY")
           }
           fields {
             slug
@@ -30,11 +31,17 @@ const BlogPage = () => {
       <div className="container">
         {data.allMarkdownRemark.edges.map((edge) => {
           return (
-              <Link to={`/blog/${edge.node.fields.slug}`}>
-              <h2>{edge.node.frontmatter.title}</h2>            
-              </Link>
+            <div className="card mb-3 shadow card-gwc">
+              <div className="card-body ml-5 mt-3 mb-3">
+                <Link to={`/blog/${edge.node.fields.slug}`}>
+                  <h2 className="card-title">{edge.node.frontmatter.title}</h2>
+                </Link>
+                <p className="card-text">{edge.node.frontmatter.summary}</p>
+                <p className="card-text">{edge.node.frontmatter.date}</p>
+              </div>              
+            </div>
           )
-        })}
+        })}      
       </div>
     </Layout>
   )

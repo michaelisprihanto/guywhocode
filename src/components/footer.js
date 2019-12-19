@@ -14,20 +14,20 @@ const Footer = () => {
 
   return (
     <Fragment>
-      <footer className="page-footer font-small bg-light fixed-bottom">
+      <footer className="page-footer font-small bg-light mt-5 footer-sticky">
         <hr />
         <div className="container">
 
           <div className="row">
 
-            <div className="col-md-6 py-5">
-              <div className="mb-5 flex-center">
+            <div className="col-md-6 py-1">
+              <div className="mb-3 flex-center">
               <div className="footer-copyright text-center py-3">{data.site.siteMetadata.author} © 2019. All rights reserved.</div>
               </div>
             </div>
 
-            <div className="col-md-6 py-5">
-              <div className="mb-5 flex-center">
+            <div className="col-md-6 py-1">
+              <div className="mb-3 flex-center">
               <div className="footer-copyright text-center py-3">Icons</div>
               </div>
             </div>
