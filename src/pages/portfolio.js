@@ -5,7 +5,7 @@ import Jumbotron from '../components/jumbotron'
 const PortfolioPage = () => {
   return (
     <Layout>
-      <Jumbotron jumbotronTitle="My Portfolio" jumbotronContent="My portfolio." />
+      <Jumbotron jumbotronTitle="My Portfolio" jumbotronContent="A portfolio of my work and learning journey." />
       <div className="container container-padding">
         <p>Coming soon.</p>
       </div>

@@ -29,7 +29,7 @@ const AboutPage = () => {
           <li>Open a restaurant, free food for people in need</li>
           <li>Speak at conferences</li>
           <li>Travel around the world for 2 months</li>
-          <li>Have a company that empowers employees to be useful in communities</li>
+          <li>Build a company that empowers employees to be useful in communities</li>
           <li>Able to cook restaurant-grade quality food!</li>
         </ul>
         <hr />
