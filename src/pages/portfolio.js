@@ -6,6 +6,9 @@ const PortfolioPage = () => {
   return (
     <Layout>
       <Jumbotron jumbotronTitle="My Portfolio" jumbotronContent="My portfolio." />
+      <div className="container container-padding">
+        <p>Coming soon.</p>
+      </div>
     </Layout>
   )
 }

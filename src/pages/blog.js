@@ -28,7 +28,7 @@ const BlogPage = () => {
   return (
     <Layout>
       <Jumbotron jumbotronTitle="Blog" jumbotronContent="My writings on the journey of web development." />
-      <div className="container">
+      <div className="container container-padding">
         {data.allMarkdownRemark.edges.map((edge) => {
           return (
             <div className="card mb-3 shadow card-gwc">

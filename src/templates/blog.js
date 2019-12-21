@@ -27,8 +27,8 @@ const Blog = (props) => {
   return (
     <Layout>
       <Jumbotron jumbotronTitle={props.data.markdownRemark.frontmatter.title} jumbotronContent={props.data.markdownRemark.frontmatter.date} />
-      <div className="container">
-      <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}></div>
+      <div className="container container-padding">
+        <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}></div>
       </div>
     </Layout>
   )
