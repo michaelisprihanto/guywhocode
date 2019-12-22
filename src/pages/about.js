@@ -7,7 +7,7 @@ const AboutPage = () => {
     <Layout>
       <Jumbotron jumbotronTitle="I'm GuyWhoCode" jumbotronContent="About me." />
       <div className="container container-padding">
-        <p>My name is Michael a.k.a. GuyWhoCode, my passion is building things. I have tasted different career journeys in non-tech industries, however my heart has always been into technology. I built this website as reminders and logs of my journey back into tech industry, and I want to give back to tech communities who have been very supportive of my journeys.</p>
+        <p>My name is Michael a.k.a. GuyWhoCode, my passion is building and creating things. I have tasted different career journeys in non-tech industries, however my heart has always been into technology. I built this website as reminders and logs of my journey back into tech industry, and I want to give back to tech communities who have been very supportive of my journeys.</p>
         <hr />
         <p><strong>Languages:</strong></p>
         <ul>
@@ -21,12 +21,13 @@ const AboutPage = () => {
           <li>Have thirsts for knowledge</li>
           <li>A student of the game of basketball</li>
           <li>Addicted to mangoes</li>
+          <li>Believe in the power of giving</li>
           <li>Forget non-essential things easily</li>
         </ul>
         <hr />
         <p><strong>My bucketlist includes:</strong></p>
         <ul>
-          <li>Open a restaurant, free food for people in need</li>
+          <li>Open a restaurant that serves free food for people in need</li>
           <li>Speak at conferences</li>
           <li>Travel around the world for 2 months</li>
           <li>Build a company that empowers employees to be useful in communities</li>

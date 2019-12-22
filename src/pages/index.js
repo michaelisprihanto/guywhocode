@@ -26,7 +26,7 @@ const IndexPage = () => {
   `)
   return (
     <Layout>
-      <Jumbotron jumbotronTitle="Hello, I'm GuyWhoCode" jumbotronContent="I'm a teacher by heart and a full-stack developer by passion. My mission is to share knowledge to other people." />
+      <Jumbotron jumbotronTitle="Hello, I'm GuyWhoCode" jumbotronContent="I'm a full-stack developer by passion and a teacher by heart. I believe in the power of giving. My mission is to share knowledge to other people." />
       <div className="container container-padding mt-3">
         <h4>Blog</h4>
         {data.allMarkdownRemark.edges.map((edge) => {
@@ -45,12 +45,13 @@ const IndexPage = () => {
         <Link to='/blog'><button type="button" className="btn btn-outline-primary mb-3 mt-2">See more blog posts</button></Link>
         <hr />
         <h4>Portfolio</h4>
+        <p>Coming soon.</p>
         <Link to='/portfolio'><button type="button" className="btn btn-outline-primary mb-3 mt-2">See more of my portfolio</button></Link>
         <hr />
         <h4>About Me</h4>
         <p><strong>My bucketlist includes:</strong></p>
         <ul>
-          <li>Open a restaurant, free food for people in need</li>
+          <li>Open a restaurant that serves free food for people in need</li>
           <li>Speak at conferences</li>
           <li>Travel around the world for 2 months</li>
           <li>Build a company that empowers employees to be useful in communities</li>
