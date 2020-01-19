@@ -8,7 +8,7 @@ export class Navbar extends Component {
         <nav className="navbar navbar-gwc navbar-light bg-light">
           <div className="container">
             <div className="col-sm-6">
-              <Link to="/" className="navbar-brand">{this.props.title}</Link>
+              <Link to="/" className="navbar-brand">GuyWhoCode</Link>
             </div>
             <div className="col-sm-6">
               <ul className="navbar-gwc mr-auto mt-2 mt-lg-0">
