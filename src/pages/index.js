@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
+import { Helmet } from "react-helmet"
+
 import Layout from '../components/layout'
 import Jumbotron from '../components/jumbotron'
 
@@ -26,6 +28,9 @@ const IndexPage = () => {
   `)
   return (
     <Layout>
+      <Helmet>
+        <title>GuyWhoCode</title>
+      </Helmet>
       <Jumbotron jumbotronTitle="Hello, I'm GuyWhoCode" jumbotronContent="I'm a full-stack developer by passion and a teacher by heart. I believe in the power of giving. My mission is to share knowledge to other people." />
       <div className="container container-padding mt-3">
         <h4>Blog</h4>

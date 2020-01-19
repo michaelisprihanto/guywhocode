@@ -1,4 +1,6 @@
 import React from 'react'
+import { Helmet } from "react-helmet"
+
 import Layout from '../components/layout'
 import Jumbotron from '../components/jumbotron'
 import { Link, graphql, useStaticQuery } from 'gatsby'
@@ -27,6 +29,9 @@ const BlogPage = () => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>GuyWhoCode | Blog</title>
+      </Helmet>
       <Jumbotron jumbotronTitle="Blog" jumbotronContent="My writings on the journey of web development." />
       <div className="container container-padding">
         {data.allMarkdownRemark.edges.map((edge) => {
@@ -40,6 +45,7 @@ const BlogPage = () => {
                 <p className="card-text">{edge.node.frontmatter.date}</p>
               </div>              
             </div>
+          
           )
         })}      
       </div>

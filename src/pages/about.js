@@ -1,10 +1,15 @@
 import React from 'react'
+import { Helmet } from "react-helmet"
+
 import Layout from '../components/layout'
 import Jumbotron from '../components/jumbotron'
 
 const AboutPage = () => {
   return (
     <Layout>
+      <Helmet>
+        <title>GuyWhoCode | About Me</title>
+      </Helmet>
       <Jumbotron jumbotronTitle="I'm GuyWhoCode" jumbotronContent="About me." />
       <div className="container container-padding">
         <p>My name is Michael a.k.a. GuyWhoCode, my passion is building and creating things. I have tasted different career journeys in non-tech industries, however my heart has always been into technology. I built this website as reminders and logs of my journey back into tech industry, and I want to give back to tech communities who have been very supportive of my journeys.</p>
