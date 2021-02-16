@@ -28,7 +28,6 @@ module.exports = {
         ]
       }
     },
-    `gatsby-plugin-react-helmet`,
-  ],
-  pathPrefix: "/guywhocode",
+    `gatsby-plugin-react-helmet`
+  ]
 }
